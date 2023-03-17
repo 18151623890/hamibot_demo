@@ -5,8 +5,8 @@ const { SHOW_CONSOLE } = hamibot.env;
 auto.waitFor();
 
 // 显示控制台
-if (true) {
-    console.show();
+if (SHOW_CONSOLE) {
+    // console.show();
     sleep(300);
     // 修改控制台位置
     console.setPosition(0, 100);
@@ -21,6 +21,6 @@ const _packageName = 'com.taobao.taobao';
 
 var taobao = app.getPackageInfo(_packageName);
 
-if (app.launch(_packageName)) {
+if (app.launchPackage(_packageName)) {
     toastLog("start taobao success.");
 }
