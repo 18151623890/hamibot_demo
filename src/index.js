@@ -5,7 +5,7 @@ const { SHOW_CONSOLE } = hamibot.env;
 auto.waitFor();
 
 // 显示控制台
-if (SHOW_CONSOLE) {
+if (true) {
     console.show();
     sleep(300);
     // 修改控制台位置
