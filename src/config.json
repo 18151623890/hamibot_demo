@@ -1,8 +1,16 @@
 [
     {
-        "label": "显示控制台(需要悬浮窗权限)",
-        "type": "select",
-        "name": "SHOW_CONSOLE",
+        "label": "操作延时",
+        "name": "sleepTime",
+        "placeholder": "默认1秒钟",
+        "help": "操作间隔时长,默认1秒钟",
+        "validation": "required",
+        "validation-name": "操作延时"
+    },
+    {
+        "label": "是否开启控制台",
+        "type": "radio",
+        "name": "openConsoleUi",
         "options": {
             "true": "是",
             "false": "否"
